@@ -186,7 +186,7 @@ UPDATED_MESSAGE="${SELECTED_TYPE}${SELECTED_SCOPE}${BREAKING_CHANGE}: ${ORIGINAL
 read -p "Ready to commit: '${UPDATED_MESSAGE}' [yn]? " READY_TO_COMMIT
 
 case $READY_TO_COMMIT in
-  y) echo "$UPDATED_MSG" > "$ORIGINAL_FILE";;
+  y) echo "$UPDATED_MESSAGE" > "$ORIGINAL_FILE";;
   *) exit 1 ;;
 esac
 
